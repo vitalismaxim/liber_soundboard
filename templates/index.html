@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sound Buttons</title>
+</head>
+<body>
+  <div class="buttons-container">
+    <button class="sound-button" onclick="playSound('static/sound1.mp3')">Sound 1</button>
+    <button class="sound-button" onclick="playSound('static/sound2.mp3')">Sound 2</button>
+    <!-- Add more buttons as needed -->
+  </div>
+
+  <script>
+    function playSound(soundFile) {
+      var audio = new Audio(soundFile);
+      audio.play();
+    }
+  </script>
+</body>
+</html>
